@@ -1,7 +1,7 @@
 general:
   buildTool: "mta"
 service:
-  buildToolVersion: "1.2.18"
+  buildToolVersion: "MBTJ11N16"
 stages:
   Build:
     npmExecuteLint: false
