@@ -23,6 +23,10 @@ stages:
     deployType: "standard"
     tmsUpload: false
 steps:
+  setupCommonPipelineEnvironment:
+    collectTelemetryData: true
+  mtaBuild:
+    buildTarget: "CF"
   artifactPrepareVersion:
     versioningType: "cloud_noTag"
   cloudFoundryDeploy:
